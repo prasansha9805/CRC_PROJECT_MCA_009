@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Your Slam Book Entry</h1>
+
+<div id="result"></div>
+
+<script>
+
+document.getElementById("result").innerHTML = `
+<p>Name: ${localStorage.getItem("name")}</p>
+<p>Age: ${localStorage.getItem("age")}</p>
+<p>Email: ${localStorage.getItem("email")}</p>
+<p>Contact: ${localStorage.getItem("contact")}</p>
+<p>Address: ${localStorage.getItem("address")}</p>
+<p>DOB: ${localStorage.getItem("dob")}</p>
+<p>Favorite Color: ${localStorage.getItem("color")}</p>
+<p>Gender: ${localStorage.getItem("gender")}</p>
+<p>Hobbies: ${localStorage.getItem("hobbies")}</p>
+<p>Social Media: ${localStorage.getItem("social")}</p>
+<p>About: ${localStorage.getItem("about")}</p>
+<p>Signature: ${localStorage.getItem("sign")}</p>
+`;
+
+</script>
+
+</body>
+</html>
