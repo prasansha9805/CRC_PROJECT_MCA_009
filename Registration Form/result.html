@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Result</title>
+<link rel ="Stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Registration Details</h2>
+<div id="result"></div>
+
+<script>
+
+const p = new URLSearchParams(window.location.search);
+
+document.getElementById("result").innerHTML = `
+<p>Name: ${p.get("name")}</p>
+<p>Age: ${p.get("age")}</p>
+<p>DOB: ${p.get("dob")}</p>
+<p>Roll No: ${p.get("roll")}</p>
+<p>Enrollment: ${p.get("enroll")}</p>
+<p>Father: ${p.get("father")}</p>
+<p>Mother: ${p.get("mother")}</p>
+<p>Contact: ${p.get("contact")}</p>
+<p>Email: ${p.get("email")}</p>
+
+<p>Current Address: ${p.get("caddress")}, ${p.get("cdistrict")}, ${p.get("cstate")} - ${p.get("cpin")}</p>
+
+<p>Permanent Address: ${p.get("paddress")}, ${p.get("pdistrict")}, ${p.get("pstate")} - ${p.get("ppin")}</p>
+
+<p>10th Marks: ${p.get("marks10")}</p>
+<p>12th Marks: ${p.get("marks12")}</p>
+
+<p>Course: ${p.get("course")}</p>
+<p>Gender: ${p.get("gender")}</p>
+<p>Category: ${p.get("category")}</p>
+`;
+
+</script>
+
+</body>
+</html>

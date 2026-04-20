@@ -1,0 +1,91 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Container */
+.container {
+    width: 450px;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Inputs */
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Focus Effect */
+input:focus, textarea:focus, select:focus {
+    border-color: #a18cd1;
+    box-shadow: 0 0 5px #a18cd1;
+}
+
+/* Section Titles */
+h4 {
+    margin-top: 15px;
+    color: #555;
+}
+
+/* Radio & Checkbox */
+input[type="radio"], input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+/* Labels inline */
+label {
+    margin-right: 10px;
+}
+
+/* File inputs */
+input[type="file"] {
+    border: none;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+button:hover {
+    background: linear-gradient(135deg, #5a67d8, #6b46c1);
+}
+
+/* Result page card (bonus) */
+.card {
+    width: 420px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}

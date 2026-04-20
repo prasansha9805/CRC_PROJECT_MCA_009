@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+<h2>Student Registration Form</h2>
+
+<form action="result.html" method="GET" onsubmit="return validateForm()">
+
+<input type="text" name="name" id="name" placeholder="Full Name">
+
+<input type="number" name="age" id="age" placeholder="Age">
+
+<input type="date" name="dob" id="dob">
+
+<input type="text" name="roll" id="roll" placeholder="Roll No">
+
+<input type="text" name="enroll" id="enroll" placeholder="Enrollment No">
+
+<input type="text" name="father" id="father" placeholder="Father Name">
+
+<input type="text" name="mother" id="mother" placeholder="Mother Name">
+
+<input type="text" name="contact" id="contact" placeholder="Contact Number">
+
+<input type="email" name="Email" id="email"  placeholder="Email">
+<h4>Address</h4>
+<input type="text" name="caddress" id="caddress" placeholder="Current Address">
+<input type="text" name="cdistrict" id="cdistrict" placeholder="District">
+<input type="text" name="cstate" id="cstate" placeholder="State">
+<input type="text" name="cpin" id="cpin" placeholder="Pincode">
+
+<input type="text" name="paddress" id="paddress" placeholder="Permanent Address">
+<input type="text" name="pdistrict" id="pdistrict" placeholder="District">
+<input type="text" name="pstate" id="pstate" placeholder="State">
+<input type="text" name="ppin" id="ppin" placeholder="Pincode">
+
+<h4>Marks</h4>
+<input type="number" name="marks10" id="marks10" placeholder="10th Marks">
+<input type="number" name="marks12" id="marks12" placeholder="12th Marks">
+
+<h4>Course</h4>
+<select name="course" id="course">
+<option value="">Select Course</option>
+<option>BCA</option>
+<option>MCA</option>
+<option>BTech CSE</option>
+<option>BTech IT</option>
+<option>BTech AI</option>
+<option>BTech DS</option>
+</select>
+
+<h4>Gender</h4>
+<input type="radio" name="gender" value="Male"> Male
+<input type="radio" name="gender" value="Female"> Female
+
+<h4>Category</h4>
+<input type="radio" name="category" value="General"> General
+<input type="radio" name="category" value="OBC"> OBC
+<input type="radio" name="category" value="SC"> SC
+<input type="radio" name="category" value="ST"> ST
+
+<h4>Upload Files</h4>
+<label>10th Certificate</label>
+<input type="file" id="cert10">
+
+<label>12th Certificate</label>
+<input type="file" id="cert12">
+
+<label>Aadhar Card</label>
+<input type="file" id="aadhar">
+
+<label>Photo</label>
+<input type="file" id="photo">
+
+<br><br>
+<button type="submit">Submit</button>
+
+</form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
