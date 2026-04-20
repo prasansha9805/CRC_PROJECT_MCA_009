@@ -1,10 +1,10 @@
 function validateForm() {
 
-    let name = document.getElementById("name").value.trim();
-    let age = document.getElementById("age").value.trim();
-    let email = document.getElementById("email").value.trim();
-    let contact = document.getElementById("contact").value.trim();
-    let address = document.getElementById("address").value.trim();
+    let name = document.getElementById("name").value;
+    let age = document.getElementById("age").value;
+    let email = document.getElementById("email").value;
+    let contact = document.getElementById("contact").value;
+    let address = document.getElementById("address").value;
     let dob = document.getElementById("dob").value;
     let color = document.getElementById("color").value;
     let social = document.getElementById("social").value;
