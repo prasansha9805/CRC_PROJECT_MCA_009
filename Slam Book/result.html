@@ -1,30 +1,78 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Result</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Slam Book Result</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f2f2f2;
+        }
+
+        .card {
+            width: 420px;
+            margin: 40px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            margin: 6px 0;
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
 
-<h1>Your Slam Book Entry</h1>
-
-<div id="result"></div>
+<div class="card">
+    <h2> Slam Book Entry </h2>
+    <div id="result"></div>
+</div>
 
 <script>
 
+const p = new URLSearchParams(window.location.search);
+
+
+let hobbies = p.getAll("hobby");
+
 document.getElementById("result").innerHTML = `
-<p>Name: ${localStorage.getItem("name")}</p>
-<p>Age: ${localStorage.getItem("age")}</p>
-<p>Email: ${localStorage.getItem("email")}</p>
-<p>Contact: ${localStorage.getItem("contact")}</p>
-<p>Address: ${localStorage.getItem("address")}</p>
-<p>DOB: ${localStorage.getItem("dob")}</p>
-<p>Favorite Color: ${localStorage.getItem("color")}</p>
-<p>Gender: ${localStorage.getItem("gender")}</p>
-<p>Hobbies: ${localStorage.getItem("hobbies")}</p>
-<p>Social Media: ${localStorage.getItem("social")}</p>
-<p>About: ${localStorage.getItem("about")}</p>
-<p>Signature: ${localStorage.getItem("sign")}</p>
+<p><b>Name:</b> ${p.get("name")}</p>
+<p><b>Age:</b> ${p.get("age")}</p>
+<p><b>Email:</b> ${p.get("email")}</p>
+<p><b>Contact:</b> ${p.get("contact")}</p>
+<p><b>Address:</b> ${p.get("address")}</p>
+<p><b>DOB:</b> ${p.get("dob")}</p>
+<p><b>Favorite Color:</b> ${p.get("color")}</p>
+<p><b>Gender:</b> ${p.get("gender")}</p>
+<p><b>Hobbies:</b> ${hobbies.join(", ")}</p>
+
+<p><b>Instagram:</b> 
+<a href="${p.get("instagram")}" target="_blank">Open</a></p>
+
+<p><b>LinkedIn:</b> 
+<a href="${p.get("linkedin")}" target="_blank">Open</a></p>
+
+<p><b>X:</b> 
+<a href="${p.get("x")}" target="_blank">Open</a></p>
+
+<p><b>Facebook:</b> 
+<a href="${p.get("facebook")}" target="_blank">Open</a></p>
+
+<p><b>Snapchat:</b> 
+<a href="${p.get("snapchat")}" target="_blank">Open</a></p>
+
+<p><b>About:</b> ${p.get("about")}</p>
+<p><b>Signature:</b> ${p.get("sign")}</p>
 `;
 
 </script>
